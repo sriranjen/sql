@@ -1,0 +1,24 @@
+SELECT * FROM Customers WHERE CustomerName LIKE 'a%';
+SELECT * FROM Customers WHERE CustomerName LIKE '%es';
+SELECT * FROM Customers WHERE CustomerName LIKE '%mer%';
+SELECT * FROM Customers WHERE City LIKE '_ondon';
+SELECT * FROM Customers WHERE City LIKE 'L___on';
+SELECT * FROM Customers WHERE CustomerName LIKE '[bsp]%';
+SELECT * FROM Customers WHERE CustomerName LIKE '[a-f]%';
+SELECT * FROM Customers WHERE CustomerName LIKE 'a__%';
+SELECT * FROM Customers WHERE CustomerName LIKE '_r%';
+SELECT * FROM Customers WHERE Country IN ('Germany', 'France', 'UK');
+SELECT * FROM Customers WHERE Country NOT IN ('Germany', 'France', 'UK');
+SELECT * FROM Customers WHERE CustomerID IN (SELECT CustomerID FROM Orders);
+SELECT * FROM Customers WHERE CustomerID NOT IN (SELECT CustomerID FROM Orders);
+SELECT * FROM Products WHERE Price BETWEEN 10 AND 20;
+SELECT CustomerID AS ID FROM Customers;
+SELECT CustomerID AS ID, CustomerName AS Customer FROM Customers;
+SELECT ProductID, ProductName, CategoryName FROM Products INNER JOIN Categories ON Products.CategoryID = Categories.CategoryID;
+SELECT Products.ProductID, Products.ProductName, Categories.CategoryName FROM Products INNER JOIN Categories ON Products.CategoryID = Categories.CategoryID;
+SELECT Customers.CustomerName, Orders.OrderID FROM Customers LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID ORDER BY Customers.CustomerName;
+SELECT Orders.OrderID, Employees.LastName, Employees.FirstName FROM Orders RIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID ORDER BY Orders.OrderID;
+SELECT Customers.CustomerName, Orders.OrderID FROM Customers FULL OUTER JOIN Orders ON Customers.CustomerID=Orders.CustomerID ORDER BY Customers.CustomerName;
+SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City
+FROM Customers A, Customers B WHERE A.CustomerID <> B.CustomerID AND A.City = B.City ORDER BY A.City;
+SELECT City FROM Customers UNION SELECT City FROM Suppliers ORDER BY City;
