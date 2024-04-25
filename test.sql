@@ -4,7 +4,6 @@ SELECT title FROM books;
 -- Task 2: Find the titles of all books published after 2010
 SELECT title FROM books WHERE publication_year > 2010;
 -- Answer: [List of book titles]
-
 -- Task 3: List the names of all authors who have written more than 5 books
 SELECT authors.author_name 
 FROM authors 
