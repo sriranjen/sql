@@ -55,5 +55,4 @@ ORDER BY authors.author_name, books.title;
 -- Answer: [List of author names with the count of books written]
 
 -- Task 13: Find the title of the book with the highest publication year
--- Query not provided
 -- Answer: [Title of the book]
