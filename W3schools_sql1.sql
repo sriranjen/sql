@@ -1,4 +1,4 @@
-The SQL SELECT Statement
+ The SQL SELECT Statement
 SELECT column1, column2 FROM table_name;
 If you want to return all columns, without specifying every column name
 SELECT * FROM Customers;
