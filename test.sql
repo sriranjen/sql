@@ -1,6 +1,5 @@
 -- Task 1: Retrieve the names of all books in the library
 SELECT title FROM books;
-
 -- Task 2: Find the titles of all books published after 2010
 SELECT title FROM books WHERE publication_year > 2010;
 -- Answer: [List of book titles]
