@@ -10,7 +10,6 @@ INNER JOIN books ON authors.author_id = books.author_id
 GROUP BY authors.author_name 
 HAVING COUNT(books.author_id) > 5;
 -- Answer: [List of author names]
-
 -- Task 4: List the names of all members who have borrowed a book in the last month
 -- Query not provided
 -- Answer: [List of member names]
