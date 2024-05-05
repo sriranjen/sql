@@ -13,7 +13,6 @@ HAVING COUNT(books.author_id) > 5;
 -- Task 4: List the names of all members who have borrowed a book in the last month
 -- Query not provided
 -- Answer: [List of member names]
-
 -- Task 5: Calculate the total number of books borrowed by each member, sorted in descending order of the count
 -- Query not provided
 -- Answer: [List of member names with the count of books borrowed]
