@@ -16,7 +16,6 @@ HAVING COUNT(books.author_id) > 5;
 -- Task 5: Calculate the total number of books borrowed by each member, sorted in descending order of the count
 -- Query not provided
 -- Answer: [List of member names with the count of books borrowed]
-
 -- Task 6: Retrieve the average publication year of all books in the library
 SELECT AVG(publication_year) AS avg_pub_year FROM books;
 -- Answer: [Average publication year]
