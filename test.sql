@@ -19,7 +19,6 @@ HAVING COUNT(books.author_id) > 5;
 -- Task 6: Retrieve the average publication year of all books in the library
 SELECT AVG(publication_year) AS avg_pub_year FROM books;
 -- Answer: [Average publication year]
-
 -- Task 7: Find the title and author name of the book with the earliest publication year
 -- Query not provided
 -- Answer: [Title and author name of the book]
