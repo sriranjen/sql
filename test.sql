@@ -22,7 +22,6 @@ SELECT AVG(publication_year) AS avg_pub_year FROM books;
 -- Task 7: Find the title and author name of the book with the earliest publication year
 -- Query not provided
 -- Answer: [Title and author name of the book]
-
 -- Task 8: List the names of all authors who have not written any books in the library
 -- Query not provided
 -- Answer: [List of author names]
