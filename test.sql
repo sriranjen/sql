@@ -25,7 +25,6 @@ SELECT AVG(publication_year) AS avg_pub_year FROM books;
 -- Task 8: List the names of all authors who have not written any books in the library
 -- Query not provided
 -- Answer: [List of author names]
-
 -- Task 9: Calculate the total number of books borrowed in each month of the year
 SELECT EXTRACT(MONTH FROM borrow_date) AS month, COUNT(book_id) AS num_books_borrowed
 FROM members
