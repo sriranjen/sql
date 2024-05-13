@@ -31,7 +31,6 @@ FROM members
 GROUP BY EXTRACT(MONTH FROM borrow_date)
 ORDER BY month;
 -- Answer: [Number of books borrowed in each month]
-
 -- Task 10: Identify the member(s) who borrowed the most books from the library
 -- Query not provided
 -- Answer: [List of member names]
