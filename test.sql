@@ -41,7 +41,6 @@ FROM authors
 INNER JOIN books ON authors.author_id = books.author_id 
 ORDER BY authors.author_name, books.title;
 -- Answer: [List of author names with the titles of their books]
-
 -- Task 12: Retrieve the total number of books written by each author, sorted in descending order of the count
 -- Query not provided
 -- Answer: [List of author names with the count of books written]
